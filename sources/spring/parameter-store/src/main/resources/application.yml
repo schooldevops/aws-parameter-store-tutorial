@@ -1,6 +1,14 @@
 spring:
   config:
     activate:
+      on-profile: default
+dbname: dbname-default
+test:
+  value: Hello-default
+---
+spring:
+  config:
+    activate:
       on-profile: dev
     import: 'aws-parameterstore:'
 
@@ -10,3 +18,6 @@ aws:
     prefix: /project01
     profile-separator: _
     name: myapp
+
+test:
+  value: Hello-dev

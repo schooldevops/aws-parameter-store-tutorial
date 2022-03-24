@@ -17,8 +17,11 @@ public class ParameterStoreApplication implements CommandLineRunner {
 	@Value("${dbname}")
 	private String dbname;
 
+	@Value("${test.value}")
+	private String testValue;
+
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("DBName: " + dbname);
+		System.out.println("DBName: " + dbname + " : " + testValue);
 	}
 }
