@@ -1,0 +1,12 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+    import: 'aws-parameterstore:'
+
+aws:
+  paramstore:
+    enabled: true
+    prefix: /project01
+    profile-separator: _
+    name: myapp
