@@ -20,8 +20,11 @@ public class ParameterStoreApplication implements CommandLineRunner {
 	@Value("${test.value}")
 	private String testValue;
 
+	@Value("${api.password}")
+	private String api_password;
+
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("DBName: " + dbname + " : " + testValue);
+		System.out.println("DBName: " + dbname + " : " + testValue + " apiPassword: " + api_password);
 	}
 }
