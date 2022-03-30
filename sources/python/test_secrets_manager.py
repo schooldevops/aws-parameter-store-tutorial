@@ -56,7 +56,7 @@ print(response)
 
 response = client.update_secret(
     SecretId='my_secret_test_python',
-    Description='Description updated'
+    Description='Description 내용 수정하기'
 )
 
 print(response)

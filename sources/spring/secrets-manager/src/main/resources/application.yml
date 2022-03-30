@@ -1,0 +1,28 @@
+spring:
+  config:
+    activate:
+      on-profile: default
+dbname: dbname-default
+test:
+  value: Hello-default
+db:
+  db-host: localhost:3306
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+#    import: 'optional:aws-secretsmanager:'
+    import: 'optional:aws-secretsmanager:project01/myapp_dev'
+
+aws:
+  secretsmanager:
+    enabled: true
+#    prefix: project01
+#    profile-separator: _
+#    name: myapp
+
+test:
+  value: Hello-dev
+db:
+  db-host: ${db.host}
