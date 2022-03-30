@@ -36,3 +36,5 @@ https://cloud.spring.io/spring-cloud-static/spring-cloud-aws/2.0.1.RELEASE/singl
 - Terraform 이용방법
 https://www.sufle.io/blog/keeping-secrets-as-secret-on-amazon-ecs-using-terraform
 
+- WorkingSecretsManager with boto3
+https://hands-on.cloud/working-with-secrets-manager-in-python-using-boto3/
